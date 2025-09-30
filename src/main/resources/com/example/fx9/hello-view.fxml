@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="718.0" prefWidth="817.0" spacing="12.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.fx9.HelloController">
+    <padding>
+        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+    </padding>
+
+    <Label id="welcomeText" fx:id="welcomeText" text="People" />
+
+    <HBox spacing="8.0">
+        <Button onAction="#onHelloButtonClick" text="Hello!" />
+        <Button onAction="#onAddPerson" text="Add Person" />
+    </HBox>
+
+    <TableView fx:id="peopleTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="140" text="Name" />
+            <TableColumn fx:id="ageColumn" prefWidth="80" text="Age" />
+            <TableColumn fx:id="sexColumn" prefWidth="120" text="Sex" />
+            <TableColumn fx:id="cityColumn" prefWidth="160" text="City" />
+        </columns>
+    </TableView>
+</VBox>

@@ -1,0 +1,36 @@
+
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #f7f9fc, #e9eef7);
+}
+
+
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+}
+
+
+.label {
+    -fx-text-fill: #2d3748; /* slate-700 */
+    -fx-font-size: 16px;
+}
+#welcomeText {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a202c; /* gray-900 */
+}
+
+
+.button {
+    -fx-background-radius: 6px;
+    -fx-background-color: orange; /* primary */
+    -fx-text-fill: white;
+    -fx-padding: 8px 14px;
+}
+.button:hover {
+    -fx-background-color: green;
+}
+.button:pressed {
+    -fx-background-color: lightgreen;
+}
