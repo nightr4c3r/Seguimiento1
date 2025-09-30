@@ -76,7 +76,6 @@ public class HelloController {
         GridPane.setHgrow(ageField, Priority.ALWAYS);
         GridPane.setHgrow(cityField, Priority.ALWAYS);
 
-        // Enable/disable OK button based on validation
         Button okButton = (Button) dialog.getDialogPane().lookupButton(ButtonType.OK);
         okButton.setDisable(true);
 
